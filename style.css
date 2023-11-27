@@ -10,9 +10,10 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
   font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
 }
 
 h1 {
@@ -39,8 +40,29 @@ p {
   text-transform: lowercase;
 }
 
-
-.wrapper{
-  width: 60%;
+.wrapper {
+  width: 70%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 592px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .wrapper {
+    width: 95%;
+  }
+  input,
+button,
+select {
+
+  margin: 1em;
+  padding: 0.3em;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  font-family: inherit;
+}
+input{
+  max-width: 70%
+};
 }
